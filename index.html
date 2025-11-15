@@ -1,31 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salman & Alina Nikkah</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <title>Nikkah Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-red: #C00000; /* Strong Red */
+            --brand-green: #2E8B57; /* Sea Green */
+            --brand-green-dark: #006400; /* Dark Green */
+            --brand-gold: #D4AF37; /* Muted Gold for Seal */
+            --off-white: #FDFBF7;
+        }
+        /* Custom styles and animations */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            /* New Off-white and Red Background Pattern */
+            background-color: var(--off-white);
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80"%3E%3Cpath fill="%23C00000" fill-opacity="0.1" d="M14 16H9v-2h5v2zm6-12h-2v2h2V4zm12 12h-2v2h2v-2zm-6-6h-2v2h2v-2zm-6 0h-2v2h2v-2zm-6 6h-2v2h2v-2zM4 4h2v2H4V4zm10-2h2v2h-2V2zM2 8h2v2H2V8zm28 22h-2v2h2v-2zm-8-8h-2v2h2v-2zm18-18h-2v2h2V2zm-8 8h-2v2h2v-2zm-8-8h-2v2h2V2zm-2 32h2v2h-2v-2zm-2-2h2v2h-2v-2zm12 12h2v2h-2v-2zm-4 4h2v2h-2v-2zm-4-4h2v2h-2v-2zm-4 4h2v2h-2v-2zm12-8h2v2h-2v-2zM2 50h2v2H2v-2zm28-4h-2v2h2v-2zm-4-4h-2v2h2v-2zM6 50h2v2H6v-2zm24-12h2v2h-2v-2zm-6-6h2v2h-2v-2zm-12 0h2v2h-2v-2zm-6 6h2v2h-2v-2zM4 42h2v2H4v-2zm10 6h2v2h-2v-2zm-8-2h2v2H6v-2zm-2-2h2v2H4v-2zm28 14h-2v2h2v-2zM14 58h-2v2h2v-2zm-4-4h-2v2h2v-2zm-4-4h-2v2h2v-2zm-4-4h-2v2h2v-2zm-2 8h2v2H2v-2zm24 10h2v2h-2v-2zm-8-8h2v2h-2v-2zm-8-8h2v2h-2v-2zM2 66h2v2H2v-2zm10 6h2v2h-2v-2zm-8-2h2v2H4v-2zm-2-2h2v2H2v-2zm12 8h2v2h-2v-2zm-4-4h2v2h-2v-2zm-4-4h2v2h-2v-2zm12 12h2v2h-2v-2zm-4 4h2v2h-2v-2zM46 16h-2v2h2v-2zm6-12h-2v2h2V4zm12 12h-2v2h2v-2zm-6-6h-2v2h2v-2zm-6 0h-2v2h2v-2zm-6 6h-2v2h2v-2zM36 4h2v2h-2V4zm10-2h2v2h-2V2zM34 8h2v2h-2V8zm28 22h-2v2h2v-2zm-8-8h-2v2h2v-2zm18-18h-2v2h2V2zm-8 8h-2v2h2v-2zm-8-8h-2v2h2V2zm-2 32h2v2h-2v-2zm-2-2h2v2h-2v-2zm12 12h2v2h-2v-2zm-4 4h2v2h-2v-2zm-4-4h2v2h-2v-2zm-4 4h2v2h-2v-2zm12-8h2v2h-2v-2zM34 50h2v2h-2v-2zm28-4h-2v2h2v-2zm-4-4h-2v2h2v-2zM38 50h2v2h-2v-2zm24-12h2v2h-2v-2zm-6-6h2v2h-2v-2zm-12 0h2v2h-2v-2zm-6 6h2v2h-2v-2zM36 42h2v2h-2v-2zm10 6h2v2h-2v-2zm-8-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm28 14h-2v2h2v-2zM46 58h-2v2h2v-2zm-4-4h-2v2h2v-2zm-4-4h-2v2h2v-2zm-4-4h-2v2h2v-2zm-2 8h2v2h-2v-2zm24 10h2v2h-2v-2zm-8-8h2v2h-2v-2zm-8-8h2v2h-2v-2zM34 66h2v2h-2v-2zm10 6h2v2h-2v-2zm-8-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm12 8h2v2h-2v-2zm-4-4h2v2h-2v-2zm-4-4h2v2h-2v-2zm12 12h2v2h-2v-2zm-4 4h2v2h-2v-2zM14 78h-2v2h2v-2zm-4-4h-2v2h2v-2zm-4-4h-2v2h2v-2zM46 78h-2v2h2v-2zm-4-4h-2v2h2v-2zm-4-4h-2v2h2v-2z%3C/path%3E%3C/svg%3E');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            perspective: 1200px;
+            overflow: hidden; /* Hide overflow to prevent scrollbars from background pattern */
+            padding: 40px 0;
+        }
+        .font-great-vibes { font-family: 'Great Vibes', cursive; }
+
+        /* Animation Canvases */
+        .animation-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        #falling-hearts-canvas {
+            display: none; 
+        }
+
+        /* Envelope */
+        .envelope-wrapper {
+            position: relative;
+            width: 90vw;
+            max-width: 550px;
+            min-height: 400px;
+            height: auto;
+            cursor: pointer;
+            z-index: 2; 
+        }
+        .envelope-wrapper.open { cursor: default; }
+        .envelope {
+            position: absolute;
+            width: 100%;
+            height: 400px;
+            background-color: var(--brand-red);
+            background-image: url('data:image/svg+xml,%3Csvg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23a00000" fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M5 0h1L0 6V5zM6 5v1H5z"/%3E%3C/g%3E%3C/svg%3E');
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.7s ease-in-out;
+            z-index: 10;
+        }
+        .envelope-flap {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--brand-red);
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 65%, 0 45%);
+            z-index: 12;
+            transition: transform 0.7s 0.2s ease-in-out, opacity 0.3s 0.7s ease-out;
+            transform-origin: top;
+        }
+        .envelope-flap::before {
+            content: '';
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 65%, 0 45%);
+            border: 2px solid var(--brand-gold);
+            opacity: 0.7;
+        }
+        .envelope-seal {
+            position: absolute; top: 43%; left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 45px; height: 45px;
+            background: var(--brand-gold);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            z-index: 13; font-size: 22px; color: var(--brand-red);
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2), inset 0 2px 3px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        /* Invitation Card */
+        .invitation-card {
+            position: relative;
+            width: 100%;
+            background: rgba(253, 251, 247, 0.85); /* Off-white with 85% opacity */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 5px 40px rgba(0,0,0,0.3);
+            transform: scale(0.95) translateY(50px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.7s 0.5s ease-out;
+            padding: 30px;
+            text-align: center;
+            z-index: 5;
+            overflow: hidden; /* Important for pseudo-element positioning */
+        }
+
+        .invitation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://raw.githubusercontent.com/riazahmed48750/Nikah-Mubarak/main/Ab.png');
+            background-size: contain;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            opacity: 0.15; /* Adjusted opacity */
+            z-index: -1;
+        }
+        
+        /* Open State */
+        .envelope-wrapper.open .envelope-flap {
+            transform: rotateX(180deg);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .envelope-wrapper.open .envelope { opacity: 0; z-index: -1; }
+        .envelope-wrapper.open .envelope-seal { opacity: 0; animation: none; }
+        .envelope-wrapper.open .invitation-card {
+            transform: scale(1) translateY(0);
+            opacity: 1; 
+            visibility: visible;
+        }
+        .envelope-wrapper.open #open-prompt {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #open-prompt {
+            transition: opacity 0.4s ease-out;
+        }
+        
+        /* Content Animation */
+        .invitation-content > * {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .envelope-wrapper.open .invitation-content > * { opacity: 1; transform: translateY(0); }
+        .envelope-wrapper.open .invitation-content > *:nth-child(1) { transition-delay: 1.0s; }
+        .envelope-wrapper.open .invitation-content > *:nth-child(2) { transition-delay: 1.2s; }
+        .envelope-wrapper.open .invitation-content > *:nth-child(3) { transition-delay: 1.5s; } 
+        .envelope-wrapper.open .invitation-content > *:nth-child(4) { transition-delay: 1.7s; }
+        .envelope-wrapper.open .invitation-content > *:nth-child(5) { transition-delay: 1.9s; }
+        .envelope-wrapper.open .invitation-content > *:nth-child(6) { transition-delay: 2.1s; }
+        
+        /* Countdown Timer */
+        #countdown { display: flex; justify-content: center; gap: 15px; margin: 20px 0; }
+        .countdown-item {
+            display: flex; flex-direction: column; align-items: center;
+            font-weight: bold; color: #555;
+        }
+        .countdown-item span:first-child { font-size: 2.5rem; color: var(--brand-red); line-height: 1; }
+        .countdown-item span:last-child { font-size: 0.8rem; text-transform: uppercase; }
+
+        @keyframes pulse {
+            0%, 100% { transform: translateX(-50%) translateY(-50%) scale(1); }
+            50% { transform: translateX(-50%) translateY(-50%) scale(1.08); }
+        }
+
+    </style>
 </head>
 <body>
-  <div class="main-container">
-    <div class="card">
-      <h1 class="names">Salman & Alina</h1>
-      <p class="invite-text">You are invited to celebrate our Nikkah</p>
 
-      <!-- Countdown Timer -->
-      <div id="countdown">
-        <span id="days"></span> din
-        <span id="hours"></span> ghante
-        <span id="minutes"></span> minute
-        <span id="seconds"></span> second
-      </div>
+    <canvas id="sparkle-canvas" class="animation-canvas"></canvas>
+    <canvas id="falling-hearts-canvas" class="animation-canvas"></canvas>
 
-      <!-- RSVP Button -->
-      <a href="#" class="rsvp-button">RSVP</a>
+    <div class="envelope-wrapper" id="envelopeWrapper">
+        <div class="envelope">
+            <div class="envelope-seal font-great-vibes">A&F</div>
+        </div>
+        <div class="envelope-flap"></div>
+        
+        <!-- Open Prompt Button -->
+        <div id="open-prompt" class="absolute inset-0 flex items-center justify-center z-20">
+            <div class="w-48 h-48 bg-white/90 rounded-full flex items-center justify-center text-center p-4 shadow-2xl backdrop-blur-sm transform hover:scale-105 transition-transform duration-300">
+                <span class="font-semibold text-lg" style="color: var(--brand-red);">Please Click<br>to Open</span>
+            </div>
+        </div>
+        
+        <div class="invitation-card">
+            <div class="invitation-content w-full">
+                <p class="text-xl text-gray-500 tracking-widest">You are joyfully invited to celebrate the Nikkah Ceremony of</p>
+                
+                <h1 id="couple-names" class="font-great-vibes text-6xl md:text-7xl mb-2" style="color: var(--brand-red);">Fizza & Salman</h1>
+
+                <p class="text-lg text-gray-600 mb-4">Together with their families</p>
+                
+                <div id="countdown"></div>
+
+                <div class="font-semibold" style="color: var(--brand-green-dark);">
+                    <p>THURSDAY, 21TH December 2025 AT 9:00 PM</p>
+                </div>
+                <p class="mt-2 text-gray-600">Al Aqsa Banquet Gulshan-e-Iqbal block-3, Karachi</p>
+
+            </div>
+        </div>
     </div>
-  </div>
+    
+    <!-- Audio player added here -->
+    <audio id="background-audio" loop>
+        <source src="https://raw.githubusercontent.com/riazahmed48750/Nikah-Mubarak/main/MSC.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-  <script src="timer.js"></script>
+    <script>
+        // --- Music Player Logic ---
+        const audio = document.getElementById("background-audio");
+        
+        function playAudio() {
+            audio.play().catch(error => {
+                console.log("Audio autoplay was prevented:", error);
+            });
+        }
+        
+        playAudio();
+
+        // --- Core Application Logic ---
+        const envelopeWrapper = document.getElementById('envelopeWrapper');
+        let preOpenAnimationRunning = true;
+
+        envelopeWrapper.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+            }
+
+            if (!envelopeWrapper.classList.contains('open')) {
+                envelopeWrapper.classList.add('open');
+                preOpenAnimationRunning = false;
+                
+                const sparkleCanvas = document.getElementById('sparkle-canvas');
+                sparkleCanvas.style.transition = 'opacity 0.5s';
+                sparkleCanvas.style.opacity = '0';
+                
+                document.getElementById('falling-hearts-canvas').style.display = 'block';
+                heartsAnimationLoop();
+            }
+        });
+
+        // --- Countdown Timer Logic ---
+        const countdownElem = document.getElementById('countdown');
+        const weddingDate = new Date("2025-12-21T21:00:00").getTime();
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            if (distance < 0) {
+                countdownElem.innerHTML = "<p class='text-lg font-bold' style='color: var(--brand-red);'>The big day is here!</p>"; return;
+            }
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            countdownElem.innerHTML = `
+                <div class="countdown-item"><span>${days}</span><span>Days</span></div>
+                <div class="countdown-item"><span>${hours}</span><span>Hours</span></div>
+                <div class="countdown-item"><span>${minutes}</span><span>Mins</span></div>
+                <div class="countdown-item"><span>${seconds}</span><span>Secs</span></div>
+            `;
+        }, 1000);
+
+        // --- Sparkle Animation Logic (Before Open) ---
+        const sparkleCanvas = document.getElementById('sparkle-canvas');
+        const sparkleCtx = sparkleCanvas.getContext('2d');
+        let sparkles = [];
+
+        sparkleCanvas.width = window.innerWidth;
+        sparkleCanvas.height = window.innerHeight;
+
+        class Sparkle {
+             constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.size = Math.random() * 2 + 1;
+                this.life = Math.random() * 1.5 + 0.5;
+                this.initialLife = this.life;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                const rand = Math.random();
+                if (rand < 0.45) { // Red
+                    this.color = `hsla(0, 100%, 70%, 1)`;
+                } else if (rand < 0.9) { // Green
+                    this.color = `hsla(140, 80%, 60%, 1)`;
+                } else { // White
+                    this.color = `hsla(0, 0%, 100%, 1)`;
+                }
+            }
+            update() {
+                this.life -= 0.02;
+                this.x += this.vx;
+                this.y += this.vy;
+                return this.life <= 0;
+            }
+            draw() {
+                sparkleCtx.save();
+                sparkleCtx.globalAlpha = this.life / this.initialLife;
+                sparkleCtx.fillStyle = this.color;
+                sparkleCtx.beginPath();
+                sparkleCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                sparkleCtx.fill();
+                sparkleCtx.restore();
+            }
+        }
+        
+        function sparkleLoop() {
+            if (!preOpenAnimationRunning) {
+                sparkleCtx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
+                return;
+            };
+
+            sparkleCtx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
+            
+            if (Math.random() < 0.2) { // Chance to create a new sparkle
+                 const rect = envelopeWrapper.getBoundingClientRect();
+                 const x = rect.left + Math.random() * rect.width;
+                 const y = rect.top + Math.random() * rect.height;
+                 for(let i=0; i < 3; i++) {
+                     sparkles.push(new Sparkle(x, y));
+                 }
+            }
+            
+            sparkles = sparkles.filter(s => !s.update());
+            sparkles.forEach(s => s.draw());
+            
+            requestAnimationFrame(sparkleLoop);
+        }
+
+        // --- Falling Hearts Animation Logic (After Open) ---
+        const heartsCanvas = document.getElementById('falling-hearts-canvas');
+        const heartsCtx = heartsCanvas.getContext('2d');
+        let hearts = [];
+
+        heartsCanvas.width = window.innerWidth;
+        heartsCanvas.height = window.innerHeight;
+
+        class Heart {
+            constructor() {
+                this.x = Math.random() * heartsCanvas.width;
+                this.y = Math.random() * -heartsCanvas.height - 20;
+                this.speed = Math.random() * 2 + 1;
+                this.size = Math.random() * 15 + 10;
+                // New red color for hearts
+                this.color = `rgba(192, 0, 0, ${Math.random() * 0.5 + 0.4})`; 
+                this.rotation = Math.random() * Math.PI * 2;
+                this.sway = Math.random() * 0.5 - 0.25;
+            }
+            update() {
+                this.y += this.speed;
+                this.x += this.sway;
+                this.rotation += 0.01;
+                return this.y > heartsCanvas.height + this.size;
+            }
+            draw() {
+                heartsCtx.save();
+                heartsCtx.fillStyle = this.color;
+                heartsCtx.translate(this.x, this.y);
+                heartsCtx.rotate(this.rotation);
+                heartsCtx.beginPath();
+                heartsCtx.moveTo(0, 0 - this.size / 4);
+                heartsCtx.bezierCurveTo(this.size / 2, -this.size / 2, this.size, 0, 0, this.size);
+                heartsCtx.bezierCurveTo(-this.size, 0, -this.size / 2, -this.size / 2, 0, 0 - this.size / 4);
+                heartsCtx.fill();
+                heartsCtx.restore();
+            }
+        }
+        
+        let lastHeart = 0;
+        function heartsAnimationLoop(timestamp) {
+            if (envelopeWrapper.classList.contains('open') === false) return;
+            
+            heartsCtx.clearRect(0, 0, heartsCanvas.width, heartsCanvas.height);
+
+            if (timestamp - lastHeart > 200) {
+                 if (hearts.length < 50) { hearts.push(new Heart()); }
+                 lastHeart = timestamp;
+            }
+            
+            hearts = hearts.filter(h => !h.update());
+            hearts.forEach(h => h.draw());
+
+            requestAnimationFrame(heartsAnimationLoop);
+        }
+        
+        // Resize handler for both canvases
+        window.addEventListener('resize', () => {
+            sparkleCanvas.width = window.innerWidth;
+            sparkleCanvas.height = window.innerHeight;
+            heartsCanvas.width = window.innerWidth;
+            heartsCanvas.height = window.innerHeight;
+        });
+
+        // Initial call to start the pre-open animation
+        sparkleLoop();
+
+    </script>
 </body>
 </html>
